@@ -21,10 +21,6 @@ Our approach:
 - Reconstruct physically consistent thermal details via guided encoder–decoder and multi‑attention refinement.
 - Adapt guidance to scene attributes (normal/low‑illumination/fog) and handle adverse conditions.
 
-Illustrations (replace with your image paths):
-![Solution Overview](docs/solution_overview.png)
-![Technical Approach](docs/technical_approach.png)
-
 ## Model Architecture (High‑Level)
 
 1. Cross‑Modal Attention (CMA)
@@ -113,6 +109,16 @@ python test.py \
 
 The script reports average Loss/SSIM/PSNR and visualizes a couple of samples.
 
+## Results
+
+- Validation SSIM:
+- Validation PSNR:
+- Test SSIM:
+- Test PSNR:
+- Qualitative observations:
+- Inference speed (resolution / device):
+- Model size (params / disk):
+
 ## Key Components (Code Pointers)
 
 - Dataset: `isro_pkg/data/datasets.py` → `LandsatPatchDataset`, `make_dataloaders`
@@ -131,10 +137,6 @@ The script reports average Loss/SSIM/PSNR and visualizes a couple of samples.
 
 - True HR thermal ground‑truth is limited; semi‑supervised or synthetic augmentation can help.
 - Extend contrastive pretraining for stronger coarse→fine alignment; explore deformable registration heads.
-
-## Citation
-
-If this work helps your research or product, please cite this repository and SIH‑2025 submission “SPECTRA: Super‑Resolution Physics‑Guided Enhanced Cross‑Modal Thermal‑Optical Alignment.”
 
 ## License
 
