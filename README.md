@@ -111,13 +111,10 @@ The script reports average Loss/SSIM/PSNR and visualizes a couple of samples.
 
 ## Results
 
-- Validation SSIM:
-- Validation PSNR:
-- Test SSIM:
-- Test PSNR:
-- Qualitative observations:
-- Inference speed (resolution / device):
-- Model size (params / disk):
+| Band | Test SSIM | Test PSNR      | Avg RMSE-K |
+| ---- | --------- | -------------- | ---------- |
+| 1    | 0.935     | 30.76          | 0.062      |
+| 2    | 0.927     | 30.69          | 0.058      |
 
 ## Key Components (Code Pointers)
 
